@@ -1,47 +1,45 @@
 {
-	"name": "@serguun42/pdf-parse",
-	"version": "2.0.0",
-	"description": "Fork of pdf-parse (Pure javascript cross-platform module to extract text from PDFs)",
-	"main": "index.js",
-	"types": "./types/pdf-parse.d.ts",
-	"keywords": [
-		"pdf-parse",
-		"pdf-crawler",
-		"xpdf",
-		"pdf.js",
-		"pdfreader",
-		"pdf-extractor",
-		"pdf2json",
-		"j-pdfjson",
-		"pdf-parser",
-		"pdf-extract",
-		"pdf-extractor",
-		"pdf-to-text",
-		"pdf-text-extract",
-		"pdfjs",
-		"server side PDF parsing",
-		"pdf metadata"
-	],
-	"dependencies": {
-		"node-ensure": "^0.0.0"
-	},
-	"homepage": "https://github.com/serguun42/pdf-parse",
-	"bugs": {
-		"url": "https://github.com/serguun42/pdf-parse/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/serguun42/pdf-parse.git"
-	},
-	"author": "Mehmet Kozan <mehmet.kozan@live.com>",
-	"maintainers": [
-		{
-			"name": "serguun42",
-			"url": "https://github.com/serguun42"
-		}
-	],
-	"license": "MIT",
-	"engines": {
-		"node": ">=6.8.1"
-	}
+  "name": "@serguun42/pdf-parse",
+  "version": "2.1.0",
+  "description": "Fork of pdf-parse",
+  "main": "pdf-parse.js",
+  "types": "./pdf-parse.d.ts",
+  "keywords": [
+    "pdf.js",
+    "pdf",
+    "pdf-parse"
+  ],
+  "homepage": "https://github.com/serguun42/pdf-parse",
+  "bugs": {
+    "url": "https://github.com/serguun42/pdf-parse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/serguun42/pdf-parse.git"
+  },
+  "author": "Mehmet Kozan <mehmet.kozan@live.com>",
+  "maintainers": [
+    {
+      "name": "serguun42",
+      "url": "https://github.com/serguun42"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .js,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^3.7.107"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=6.8.1"
+  }
 }
