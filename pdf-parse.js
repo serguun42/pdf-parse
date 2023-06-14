@@ -1,4 +1,4 @@
-const PDFJS = require('pdfjs-dist');
+const PDFJS = require('pdfjs-dist/legacy/build/pdf.js');
 
 /** @type {import('./pdf-parse.d.ts').PageRenderer} */
 function DefaultPageRenderer(pageData) {
