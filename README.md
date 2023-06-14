@@ -105,9 +105,6 @@ const DEFAULT_OPTIONS = {
 
 	// max page number to parse
 	max: 0,
-
-	//check https://mozilla.github.io/pdf.js/getting_started/
-	version: "v1.10.100"
 };
 ```
 
@@ -118,19 +115,6 @@ If you need another format except raw text.
 ### _max_ (number)
 
 Max number of page to parse. If the value is less than or equal to 0, parser renders all pages.
-
-### _version_ (string, pdf.js version)
-
-check [pdf.js](https://mozilla.github.io/pdf.js/getting_started/)
-
--   `'default'`
--   `'v1.9.426'`
--   `'v1.10.100'`
--   `'v1.10.88'`
--   `'v2.0.550'`
-
-> _default_ version is _v1.10.100_  
-> [mozilla.github.io/pdf.js](https://mozilla.github.io/pdf.js/getting_started/#download)
 
 ## Tests
 

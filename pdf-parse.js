@@ -65,7 +65,9 @@ async function PdfParse(dataBuffer, options) {
   // the URL of the script to be loaded, and dynamically loading a cross-origin
   // script does not work).
   PDFJS.disableWorker = true;
-  const doc = await PDFJS.getDocument(dataBuffer);
+  const uint8Arr = new Uint8Array(dataBuffer);
+  const docLoading = PDFJS.getDocument(uint8Arr);
+  const doc = await docLoading.promise;
   ret.numpages = doc.numPages;
 
   const metaData = await doc.getMetadata().catch(() => Promise.resolve(null));

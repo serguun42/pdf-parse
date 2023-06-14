@@ -1,6 +1,6 @@
 {
   "name": "@serguun42/pdf-parse",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Fork of pdf-parse",
   "main": "pdf-parse.js",
   "types": "./pdf-parse.d.ts",

@@ -5,13 +5,15 @@
 // Definitions modified by: serguun42 <https://github.com/serguun42>
 // Definitions From: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+import { PDFPageProxy } from 'pdfjs-dist';
+
 export = PdfParse;
 
 declare function PdfParse(dataBuffer: Buffer, options?: PdfParse.Options): Promise<PdfParse.Result>;
 
 declare namespace PdfParse {
   type Version = 'default' | 'v1.9.426' | 'v1.10.100' | 'v1.10.88' | 'v2.0.550';
-  type PageRenderer = (pageData: any) => string | PromiseLike<string>;
+  type PageRenderer = (pageData: PDFPageProxy) => Promise<string>;
   interface Result {
     /** number of pages */
     numpages: number;
